@@ -16,13 +16,24 @@
     <!-- CSS Link -->
     <link rel="stylesheet" type="text/css" href="./index.css" />
 
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+
     <title>qwolfire</title>
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-md-5">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-md-5"
+      id="navbar"
+    >
       <div class="container-fluid mx-lg-5">
-        <a class="navbar-brand" href="#">&lt;qwolfire/&gt;</a>
+        <a class="navbar-brand" href="#landing">&lt;qwolfire/&gt;</a>
 
         <button
           class="navbar-toggler"
@@ -42,13 +53,13 @@
         >
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item px-md-3">
-              <a class="nav-link" href="#">#aboutMe</a>
+              <a class="nav-link" href="#landing">#aboutMe</a>
             </li>
             <li class="nav-item px-md-3">
-              <a class="nav-link" href="#">#projects</a>
+              <a class="nav-link" href="#projects">#projects</a>
             </li>
             <li class="nav-item px-md-3">
-              <a class="nav-link" href="#">#contactMe</a>
+              <a class="nav-link" href="#footer">#contactMe</a>
             </li>
           </ul>
         </div>
@@ -57,48 +68,45 @@
     <!-- Navbar End -->
 
     <!-- Landing Start -->
-    <div
-      class="my-5 d-flex justify-content-center align-items-center"
-      id="landing"
-    >
-      <div>
+    <div class="row justify-content-center align-items-center" id="landing">
+      <div class="p-lg-0 pb-md-3 col-auto text-center">
         <img
           src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
-          class="rounded-circle"
+          class="rounded-circle text-md-center"
+          id="profilePic"
         />
       </div>
-      <div class="p-5 col-lg-4">
+      <div class="p-lg-5 p-md-3 col-lg-5 col-md-10 col-sm-10">
         <h1>Hi, I'm Queen.</h1>
-        <h3>Full [MERN] Stack Developer</h3>
+        <h3 class="mb-lg-3">Full Stack Developer</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum
           nunc sit amet urna sollicitudin viverra. Cras pulvinar porta sapien,
           id auctor sapien porta et. Integer accumsan lectus vitae maximus
           hendrerit. Mauris quis justo suscipit, accumsan odio tincidunt,
           volutpat sem. Sed hendrerit, mauris id maximus aliquam, mauris enim
-          pellentesque justo, non ultrices massa dolor eu felis. Nulla
-          scelerisque varius imperdiet. Sed eu ultrices urna. Duis tempus
-          interdum sapien non porta. Praesent cursus purus vitae elit iaculis,
-          non tristique turpis efficitur. Mauris semper, nibh non ornare
-          vulputate, ante urna posuere ipsum, non tincidunt leo massa vitae
-          lacus. Nam erat ipsum, blandit hendrerit aliquam ac, porttitor ac
-          augue. Donec eget ultricies tortor, tristique tempor turpis. Aliquam
-          eu congue lectus.
+          pellentesque justo, non ultrices massa dolor eu felis.
         </p>
-        <a class="btn btn-dark float-end ml-2 mt-3" href="#" role="button"
-          >View Projects</a
+        <a
+          class="btn btn-dark float-end ml-md-3 mt-md-3 px-md-4"
+          href="#"
+          role="button"
+          >Resumé</a
         >
-        <a class="btn btn-dark float-end mx-2 mt-3" href="#" role="button"
-          >Download Resume</a
+        <a
+          class="btn btn-dark float-end mx-md-3 mt-md-3 px-md-4"
+          href="#"
+          role="button"
+          >View Projects</a
         >
       </div>
     </div>
     <!-- Landing End -->
 
     <!-- Projects Start -->
-    <div class="bg-secondary text-dark">
+    <div id="projects">
       <div class="mx-lg-5">
-        <h3 class="p-5">&lt;projects&gt;</h3>
+        <h2 class="p-5">&lt;projects&gt;</h2>
 
         <div
           id="carouselExampleIndicators"
@@ -164,13 +172,19 @@
           </button>
         </div>
 
-        <h3 class="p-5">&lt;projects/&gt;</h3>
+        <div class="text-center p-3">
+          <a href="">Details | </a>
+          <a href="">View | </a>
+          <a href="">Github</a>
+        </div>
+
+        <h2 class="p-5 m-0">&lt;projects/&gt;</h2>
       </div>
     </div>
     <!-- Projects End -->
 
     <!-- Footer Start -->
-    <div class="bg-dark text-light text-center">
+    <div class="text-center" id="footer">
       <div class="py-lg-5">
         <h5>Let's Connect</h5>
         <div>
