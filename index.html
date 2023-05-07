@@ -29,7 +29,7 @@
   <body>
     <!-- Navbar Start -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-md-5"
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-md-5"
       id="navbar"
     >
       <div class="container-fluid mx-lg-5">
@@ -76,16 +76,27 @@
           id="profilePic"
         />
       </div>
-      <div class="p-lg-5 p-md-3 col-lg-5 col-md-10 col-sm-10">
+      <div class="p-lg-5 p-md-3 col-lg-6 col-md-10 col-sm-10">
         <h1>Hi, I'm Queen.</h1>
         <h3 class="mb-lg-3">Full Stack Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum
-          nunc sit amet urna sollicitudin viverra. Cras pulvinar porta sapien,
-          id auctor sapien porta et. Integer accumsan lectus vitae maximus
-          hendrerit. Mauris quis justo suscipit, accumsan odio tincidunt,
-          volutpat sem. Sed hendrerit, mauris id maximus aliquam, mauris enim
-          pellentesque justo, non ultrices massa dolor eu felis.
+        <p class="landingSubHeader">
+          I'm a naturally curious and creative person, and I've always loved the
+          idea of creating something out of nothing. That's why I decided to
+          pursue web development - it's a field that lets me use my
+          problem-solving skills and creativity to build cool websites and bring
+          ideas to life.
+        </p>
+        <p class="landingSubHeader">
+          One of the things I love most about web development is that it's
+          always changing. There are constantly new skills to learn and
+          technologies to master, which keeps things interesting and keeps me on
+          my toes. I'm always looking for ways to improve my skills and create
+          even better websites.
+        </p>
+        <p class="landingSubHeader">
+          All in all, I feel really lucky to have stumbled upon web development.
+          I'm passionate about what I do, and I'm excited to keep learning and
+          growing in this field for years to come.
         </p>
         <a
           class="btn btn-dark float-end ml-md-3 mt-md-3 px-md-4"
@@ -95,7 +106,7 @@
         >
         <a
           class="btn btn-dark float-end mx-md-3 mt-md-3 px-md-4"
-          href="#"
+          href="#projects"
           role="button"
           >View Projects</a
         >
@@ -109,14 +120,14 @@
         <h2 class="p-5">&lt;projects&gt;</h2>
 
         <div
-          id="carouselExampleIndicators"
+          id="carouselExampleCaptions"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -124,13 +135,13 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
@@ -138,24 +149,83 @@
           <div class="carousel-inner text-center">
             <div class="carousel-item active">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+                src="https://caterease.com/wp-content/uploads/2015/06/placeholder.jpg"
+                class="w-75"
               />
+              <div
+                class="carousel-caption d-none d-md-block text-dark text-start"
+              >
+                <h5>E-Commerce Website</h5>
+                <p>
+                  Zuitt Capstone 3: An e-commerce website using the MERN stack.
+                  MongoDB was used for data storage, Express.js for building web
+                  applications, React for developing user interfaces, and
+                  Node.js for the server-side runtime environment. Deployed
+                  using Render and Nodemon was used for backend deployment
+                  management. The project showcases proficiency in web
+                  development, including the MERN stack, and deployment and
+                  server management.
+                </p>
+                <ul class="text-end projectList">
+                  <li><a href="">View</a></li>
+                  <li>|</li>
+                  <li><a href="">GitHub</a></li>
+                </ul>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+                src="https://caterease.com/wp-content/uploads/2015/06/placeholder.jpg"
+                class="w-75"
               />
+              <div
+                class="carousel-caption d-none d-md-block text-dark text-start"
+              >
+                <h5>API</h5>
+                <p>
+                  Zuitt Capstone 2: The project involved developing the backend
+                  component of a MERN stack application. This included creating
+                  API endpoints, managing data storage with MongoDB, and
+                  building the server-side functionality with Node.js and
+                  Express.js. To make sure everything was working smoothly,
+                  Postman was used to test the backend and iron out any kinks.
+                  This helped me to ensure that the application was running at
+                  its best.
+                </p>
+                <ul class="text-end projectList">
+                  <li><a href="">View</a></li>
+                  <li>|</li>
+                  <li><a href="">GitHub</a></li>
+                </ul>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+                src="https://caterease.com/wp-content/uploads/2015/06/placeholder.jpg"
+                class="w-75"
               />
+              <div
+                class="carousel-caption d-none d-md-block text-dark text-start"
+              >
+                <h5>Static Website</h5>
+                <p>
+                  Zuitt Capstone 1: A static website using HTML, Bootstrap, and
+                  CSS. One of the key aspects of the project was the
+                  implementation of responsive design, which ensures that the
+                  website is accessible and user-friendly on different devices.
+                </p>
+                <ul class="text-end projectList">
+                  <li><a href="">View</a></li>
+                  <li>|</li>
+                  <li><a href="">GitHub</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -164,7 +234,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -172,37 +242,48 @@
           </button>
         </div>
 
-        <div class="text-center p-3">
-          <a href="">Details | </a>
-          <a href="">View | </a>
-          <a href="">Github</a>
-        </div>
-
         <h2 class="p-5 m-0">&lt;projects/&gt;</h2>
       </div>
     </div>
     <!-- Projects End -->
 
-    <!-- Footer Start -->
-    <div class="text-center" id="footer">
+    <!-- Contact Start -->
+    <div class="text-center" id="contact">
       <div class="py-lg-5">
-        <h5>Let's Connect</h5>
-        <div>
+        <h5 class="pt-lg-5">Contact Me:</h5>
+        <div class="pt-lg-2 pb-lg-5">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg5WT27BsshJsFJGmLwXjOw49RONLv2VQlj1NLz8LhTEzNLxtf48HD2kdnfQch0m0Qjo&usqp=CAU"
-            class="rounded-circle px-lg-2 py-lg-5"
+            class="contactImg rounded-circle p-1"
           />
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg5WT27BsshJsFJGmLwXjOw49RONLv2VQlj1NLz8LhTEzNLxtf48HD2kdnfQch0m0Qjo&usqp=CAU"
-            class="rounded-circle px-lg-2 py-lg-5"
+            class="contactImg rounded-circle p-1"
           />
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg5WT27BsshJsFJGmLwXjOw49RONLv2VQlj1NLz8LhTEzNLxtf48HD2kdnfQch0m0Qjo&usqp=CAU"
-            class="rounded-circle px-lg-2 py-lg-5"
+            class="contactImg rounded-circle p-1"
           />
         </div>
       </div>
     </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="text-center" id="footer">
+      <ul id="footerList">
+        <li>&lt;qwolfire/&gt;</li>
+        <li>|</li>
+        <li>2023</li>
+      </ul>
+    </div>
     <!-- Footer End -->
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -6,6 +6,8 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* ----- NAV ----- */
+
 .navbar-brand {
   font-weight: 700;
   font-size: 24px;
@@ -18,9 +20,11 @@
   line-height: 24px;
 }
 
+/* ----- LANDING ----- */
+
 #landing {
   margin: 0;
-  padding: 11rem 0 8rem;
+  padding: 6rem 0 5rem;
   color: #1e1e1e;
 }
 
@@ -56,18 +60,53 @@ h3 {
   color: #333333;
 }
 
-p {
+.landingSubHeader {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   text-align: justify;
 }
+
+/* ----- PROJECTS ----- */
 
 #projects {
   background-color: #d9d9d9;
 }
 
-#footer {
+.carousel-caption h5 {
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.projectList li {
+  display: inline;
+}
+
+/* ----- FOOTER ----- */
+
+#contact {
   background-color: #1e1e1e;
   color: #d9d9d9;
+}
+
+.contactImg {
+  width: 2%;
+  height: auto;
+}
+
+#footer {
+  color: #1e1e1e;
+  letter-spacing: 0.2rem;
+}
+
+#footerList {
+  margin: 0;
+}
+
+#footerList li {
+  display: inline;
 }
