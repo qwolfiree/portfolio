@@ -73,6 +73,10 @@ h3 {
   background-color: #d9d9d9;
 }
 
+.carousel-caption {
+  background: rgba(51, 51, 51, 0.8);
+}
+
 .carousel-caption h5 {
   font-weight: bold;
 }
@@ -84,6 +88,15 @@ h3 {
 
 .projectList li {
   display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+a:hover {
+  color: #d9d9d9;
 }
 
 /* ----- FOOTER ----- */
